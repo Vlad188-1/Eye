@@ -1,0 +1,15 @@
+torch
+torchvision
+--extra-index-url https://download.pytorch.org/whl/cu116
+opencv-python
+natsort
+scikit-learn
+pandas
+plotly
+ConfigArgParse
+kaleido
+loguru
+Pillow
+tqdm
+albumentations
+git+https://github.com/qubvel/segmentation_models.pytorch
