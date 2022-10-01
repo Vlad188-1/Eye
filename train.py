@@ -36,20 +36,22 @@ def create_table(path_to_images: str, path_to_masks: str) -> pd.DataFrame:
     # print(df.values[100])
     # print(len(df))
 
-    names_bad_images = ["29.jpg", "91.jpg", "126.jpg", "138.jpg", "173.jpg", "253.jpg", "262.jpg",
-           "277.jpg", "279.jpg", "280.jpg", "284.jpg", "288.jpg", "347.jpg", "349.jpg",
-           "374.jpg", "559.jpg", "593.jpg", "673.jpg"]
+    # names_bad_images = ["29.jpg", "91.jpg", "126.jpg", "138.jpg", "173.jpg", "253.jpg", "262.jpg",
+    #        "277.jpg", "279.jpg", "280.jpg", "284.jpg", "288.jpg", "347.jpg", "349.jpg",
+    #        "374.jpg", "559.jpg", "593.jpg", "673.jpg"]
 
-    bad_images = [os.path.join(str(path_to_images), i) for i in names_bad_images]
-    #bad_images = [path_to_images / i for i in names_bad_images]
-    # print(bad_images)
-    df = df.loc[~df["images"].isin(bad_images)]
-    print(len(df))
+    # bad_images = [os.path.join(str(path_to_images), i) for i in names_bad_images]
+    # #bad_images = [path_to_images / i for i in names_bad_images]
+    # # print(bad_images)
+    # df = df.loc[~df["images"].isin(bad_images)]
+    # print(len(df))
 
     return df    
 
 
 def main(args):
+
+    torch.manual_seed(1)
 
     df = create_table(path_to_images=args.path_to_images, path_to_masks=args.path_to_masks)
 

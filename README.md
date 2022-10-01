@@ -20,4 +20,4 @@ python train.py --path_to_images path/to/dir/with/images --path_to_weights full/
 
 # Скачать данные и веса можно по сcылкам ниже
 1. Данные https://disk.yandex.ru/d/96IPY5S3NSzTww
-2. Веса https://disk.yandex.ru/d/NGMi5HO3i_sfBw
+2. Веса https://disk.yandex.ru/d/KvDZFwoCyndlTA
